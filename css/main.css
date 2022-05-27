@@ -1,0 +1,184 @@
+
+*{
+	box-sizing: border-box;
+}
+
+/*
+	The usage of Box-sizig (layout easier)
+	URL: https://css-tricks.com/box-sizing/
+	Date accessed: 24-09-2021
+*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+	The font-family for the body not changed
+*/
+
+header {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 0.5em 0 0 0;
+	font-family: Impact, "fantasy";
+}
+
+/*
+	Change the color for the header, let the website more like the news website
+*/
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+/*
+	Change the color for the link a in header
+*/
+
+header nav {
+	font-family: Helvetica, sans-serif;
+}
+
+/*
+	Change the font-family of the <nav> in header
+*/
+
+header nav > h2,
+header nav > ul,
+header li {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+#featured-news h2 {
+	text-align: center;
+	padding-bottom: 50px;
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+}
+
+#edu h2{
+	text-align: center;
+	padding-bottom: 50px;
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+
+}
+
+#health h2{
+	text-align: center;
+	padding-bottom: 50px;
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+}
+
+#hali-zone h2{
+	text-align: center;
+	padding-bottom: 50px;
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+}
+
+#nat-int h2{
+	text-align: center;
+	padding-bottom: 50px;
+	font-family: "Times New Roman", serif;
+	font-weight: bold;	
+}
+
+/*
+	Change the h2 in important section 
+*/
+
+#featured-news {
+	overflow: auto;
+	padding: 5%;
+	margin: auto;
+}
+
+#f-news1 {
+	width: 48%;
+	float: left;
+	margin-right: 5px;
+	padding: 10px;
+}
+
+#f-news2 {
+	width: 48%;
+	float: left;
+	margin-left: 5px;
+	padding: 10px;
+}
+
+main {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	height: 100px;
+}
+
+footer p {
+	padding-left: 0.5em;
+	line-height: 100px;
+	vertical-align: middle;
+}
+
+#nat-int, #hali-zone, #edu, #health{
+	padding: 5%;
+}
+
+/*
+	Let section look more clearly
+*/
+
+p, h3, h4{
+	font-family: "Times New Roman", serif;
+}
+
+/*
+	Change the font-family
+*/
+
+.article-title{
+	font-weight: bold;
+}
+
+/*
+	the title of article is more important
+*/
+
+.article-date{
+	font-size: 1vw;
+	color: rgba(0, 0, 0, 0.6)
+}
+
+/*
+	the date of article smaller than the paragraph
+*/
+
+.container-fluid h2{
+	color:rgba(0, 0, 0, 0.3);
+	font-family: "Arial Black", sans-serif;
+}
+
+@media screen and (max-width: 840px) {
+    /*Smartphone/moblie view (until 840px)*/
+	#f-news1, #f-news2 {
+		width: 100%;
+	}
+}
+/*
+	This website used to find the css font family
+	URL: https://www.tutorialbrain.com/css_tutorial/css_font_family_list/
+	Date accessed: 24-09-2021
+
+	I also use @media change to smartphoen /moblie view until 840px
+*/
+
